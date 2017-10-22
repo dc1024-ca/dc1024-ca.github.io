@@ -1,4 +1,4 @@
-body { 
+body {
 	font-family: 'Ruluko', sans-serif;
     font-size:14px;
 }
@@ -10,7 +10,7 @@ nav {
 }
 .navbar-nav > li > a{
 		font-weight: bold;
-}	
+}
 .navbar > div{
 		position:relative;
 }
@@ -25,14 +25,14 @@ nav {
 }
 .home-text > h2{
 	margin: 0;
-	position: absolute;              
+	position: absolute;
 	text-align: center;
 }
 .img-responsive {
     margin: 0 auto 0 auto;
 }
-#home { 
-	background: url(../image/parallax_bg1.jpg) no-repeat center center fixed; 
+#home {
+	background: url(../image/parallax_bg1.jpg) no-repeat center center fixed;
 	display: table;
 	position: relative;
 	width: 100%;
@@ -53,9 +53,9 @@ nav {
     padding:130px 20px 100px 20px;
 	color: white;
 }
-				
-#project { 
-	background: url(../image/IMG_1247.JPG) no-repeat center center fixed; 
+
+#project {
+	background: url(../image/IMG_1247.JPG) no-repeat center center fixed;
 	display: table;
 	height: 700px;
 	position: relative;
@@ -107,8 +107,8 @@ h1.top-title{
     position:relative;
     overflow:hidden;
 }
-.top-buffer { 
-    margin-top:30px; 
+.top-buffer {
+    margin-top:30px;
 }
 .project-img{
     height: 300px;
@@ -137,7 +137,7 @@ h1.top-title{
 h1 {
         font-size: 25px;
 }
-    
+
 h3{
 	text-align:center;
     color:#fff !important;
@@ -190,12 +190,12 @@ svg .icon {
 }
 .table-responsive tr:hover td{
 	background-color:#d3e9ff;
-		
+
 
 }
 .table-responsive td{
 	vertical-align:middle;
-	
+
 	background-color:#ffffff;
 
 	border:1px solid #0057af;
@@ -257,5 +257,3 @@ svg .icon {
     z-index:2;
 }
 /*haver over caption end*/
-
-
