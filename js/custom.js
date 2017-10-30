@@ -73,7 +73,7 @@
 
       $('a#downloadResume').attr({
         target: '_blank',
-        href: '../staticFiles/files/Li-Yang Chen Resume.pdf'
+        href: '../staticFiles/files/LiYang_Chen_Resume.pdf'
       });
 
     },
@@ -98,7 +98,7 @@
     );
     $('a#downloadResume').attr({
       target: '_blank',
-      href: '../staticFiles/files/Li-Yang Chen Resume.pdf'
+      href: '../staticFiles/files/LiYang_Chen_Resume.pdf'
     });
 
     mainApp.main_fun();
