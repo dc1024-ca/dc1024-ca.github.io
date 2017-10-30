@@ -32,7 +32,7 @@ nav {
     margin: 0 auto 0 auto;
 }
 #home {
-	background: url(../image/parallax_bg1.jpg) no-repeat center center fixed;
+	background: #000000 no-repeat center center fixed;
 	display: table;
 	position: relative;
 	width: 100%;
@@ -55,7 +55,7 @@ nav {
 }
 
 #project {
-	background: url(../image/IMG_1247.JPG) no-repeat center center fixed;
+	background: #000000 no-repeat center center fixed;
 	display: table;
 	height: 700px;
 	position: relative;
@@ -67,7 +67,7 @@ nav {
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 #resume{
-    background: url(../image/Paris.jpg)no-repeat center center fixed;
+    background: #000000 no-repeat center center fixed;
 	/*background-color: #f1f2f7;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
