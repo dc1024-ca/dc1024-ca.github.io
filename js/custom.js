@@ -98,7 +98,7 @@
     );
     $('a#downloadResume').attr({
       target: '_blank',
-      href: '../image/Resume.docx'
+      href: '../staticFiles/files/Li-Yang Chen Resume.pdf'
     });
 
     mainApp.main_fun();
