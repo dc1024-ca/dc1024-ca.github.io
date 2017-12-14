@@ -11,7 +11,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem; } }
+    padding-left: 25rem; } }
 
 h1,
 h2,
@@ -40,14 +40,14 @@ h2 {
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #BD5D38; }
+    color: #CAA268; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #BD5D38; }
+    color: #CAA268; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -61,7 +61,7 @@ h2 {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 25rem;
     height: 100vh; }
     #sideNav .navbar-brand {
       display: flex;
@@ -104,12 +104,12 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #BD5D38 !important; }
+  background-color: #CAA268 !important; }
 
 .text-primary {
-  color: #BD5D38 !important; }
+  color: #CAA268 !important; }
 
 a {
-  color: #BD5D38; }
+  color: #CAA268; }
   a:hover, a:focus, a:active {
-    color: #824027; }
+    color: #aa7d3c; }
