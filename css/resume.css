@@ -5,6 +5,7 @@
  */
 body {
   font-family: 'Open Sans', serif;
+  font-family: 'Cairo', sans-serif;
   padding-top: 54px;
   color: #868e96; }
 
@@ -20,6 +21,7 @@ h4,
 h5,
 h6 {
   font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40; }
@@ -35,6 +37,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Cairo', sans-serif;
   font-size: 1.35rem; }
 
 .list-social-icons a {
