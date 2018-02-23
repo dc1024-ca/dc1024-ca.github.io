@@ -25,4 +25,15 @@
     target: '#sideNav'
   });
 
+  // $('#downloadBtn').click(function() {
+  //   var a = document.createElement('a');
+  //   var url = window.URL.createObjectURL(blob);
+  //   var filename = 'Danny, Li-Yang, Chen.pdf';
+  //   a.href = url;
+  //   a.download = filename;
+  //   a.click();
+  //   window.URL.revokeObjectURL(url);
+  // })
+
+
 })(jQuery); // End of use strict
