@@ -1,0 +1,189 @@
+/*!
+ * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+@import url(https://fonts.googleapis.com/css?family=Fascinate);
+body {
+  font-family: 'Open Sans', serif;
+  font-family: 'Cairo', sans-serif;
+  padding-top: 54px;
+  color: #868e96; }
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 25rem; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40; }
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem; }
+
+h2 {
+  font-size: 3.5rem; }
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.35rem; }
+
+.list-social-icons a {
+  color: #495057; }
+  .list-social-icons a:hover {
+    color: #8AC1E0; }
+  .list-social-icons a .fa-lg {
+    font-size: 1.75rem; }
+
+.list-icons {
+  font-size: 3rem; }
+  .list-icons .list-inline-item i:hover {
+    color: #8AC1E0; }
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase; }
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 100vh; }
+    #sideNav .navbar-brand {
+      display: flex;
+      margin: auto auto 0;
+      padding: 0.5rem; }
+      #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2); }
+    #sideNav .navbar-collapse {
+      display: flex;
+      align-items: flex-start;
+      flex-grow: 0;
+      width: 100%;
+      margin-bottom: auto; }
+      #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%; }
+        #sideNav .navbar-collapse .navbar-nav .nav-item {
+          display: block; }
+          #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+            display: block; } }
+
+section.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important; }
+  section.resume-section .resume-item .resume-date {
+    min-width: none; }
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh; }
+    section.resume-section .resume-item .resume-date {
+      min-width: 18rem; } }
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important; } }
+
+.bg-primary {
+  background-color: #8AC1E0 !important; }
+
+.text-primary {
+  color: #8AC1E0 !important; }
+
+a {
+  color: #8AC1E0; }
+  a:hover, a:focus, a:active {
+    color: #4ea1d0; }
+
+* {
+  box-sizing: border-box; }
+
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+  background: #8AC1E0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 4rem; }
+  body span,
+  html span {
+    margin: -2rem 0;
+    color: #F74545;
+    align-self: center;
+    font-family: 'Fascinate', cursive;
+    font-size: 34rem;
+    letter-spacing: -1rem;
+    transition: font-size 0.3s ease;
+    text-shadow: 0 0 0 #FFAC78, -1px 1px 0 #FFAC78, -2px 2px 0 #FFAC78, -3px 3px 0 #FFAC78, -4px 4px 0 #FFAC78, -5px 5px 0 #FFAC78, -6px 6px 0 #FFAC78, -7px 7px 0 #FFE2A8, -8px 8px 0 #FFE2A8, -9px 9px 0 #FFE2A8, -10px 10px 0 #FFE2A8, -11px 11px 0 #FFE2A8, -12px 12px 0 #FFE2A8, -13px 13px 0 #FFE2A8, -14px 14px 0 #FFE2A8, -15px 15px 0 #FFE2A8, -16px 16px 0 #FFE2A8, -17px 17px 0 rgba(0, 0, 0, 0.19), 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.25), 0 3px 5px rgba(0, 0, 0, 0.28), 0 5px 10px rgba(0, 0, 0, 0.35), 0 10px 15px rgba(0, 0, 0, 0.4), 0 20px 20px rgba(0, 0, 0, 0.45); }
+    body span.one,
+    html span.one {
+      transform: rotate(-26deg); }
+    body span.two,
+    html span.two {
+      color: #423845;
+      font-size: 36rem; }
+    body span.mid,
+    html span.mid {
+      color: #423845;
+      font-size: 6rem;
+      margin-left: -7rem;
+      margin-top: 16rem;
+      z-index: 3;
+      letter-spacing: -6px; }
+    body span.three,
+    html span.three {
+      transform: rotate(26deg);
+      margin-left: -5rem;
+      margin-top: -8rem; }
+
+@media (min-width: 40.6875em) and (max-width: 51.875em) {
+  body span {
+    font-size: 28rem; }
+    body span.three, body span.two {
+      font-size: 30rem; } }
+
+@media (min-width: 30.0625em) and (max-width: 40.625em) {
+  body span {
+    font-size: 22rem; }
+    body span.three, body span.two {
+      font-size: 24rem; } }
+
+@media (max-width: 30em) {
+  body span {
+    align-self: center;
+    font-size: 18rem; }
+    body span.two {
+      font-size: 20rem; }
+    body span.mid {
+      margin-top: 11rem;
+      margin-left: -5rem; }
+    body span.three {
+      margin-left: -7rem; } }

@@ -17,7 +17,7 @@ var banner = ['/*!\n',
 ].join('');
 
 // Compiles SCSS files from /scss into /css
-gulp.task('sass', function() {
+gulp.task('sass-resume', function() {
   return gulp.src('scss/resume.scss')
     .pipe(sass())
     .pipe(header(banner, {
@@ -29,9 +29,35 @@ gulp.task('sass', function() {
     }))
 });
 
+gulp.task('sass-404', function() {
+  return gulp.src('scss/404.scss')
+    .pipe(sass())
+    .pipe(header(banner, {
+      pkg: pkg
+    }))
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
 // Minify compiled CSS
-gulp.task('minify-css', ['sass'], function() {
+gulp.task('minify-css', ['sass-resume'], function() {
   return gulp.src('css/resume.css')
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+gulp.task('minify-css', ['sass-404'], function() {
+  return gulp.src('css/404.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -103,7 +129,7 @@ gulp.task('copy', function() {
 })
 
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['sass-resume', 'sass-404', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -115,8 +141,9 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
-  gulp.watch('scss/*.scss', ['sass']);
+gulp.task('dev', ['browserSync', 'sass-resume', 'sass-404', 'minify-css', 'minify-js'], function() {
+  gulp.watch('scss/*.scss', ['sass-resume']);
+  gulp.watch('scss/*.scss', ['sass-404']);
   gulp.watch('css/*.css', ['minify-css']);
   gulp.watch('js/*.js', ['minify-js']);
   // Reloads the browser whenever HTML or JS files change
