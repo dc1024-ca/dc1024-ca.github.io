@@ -43,14 +43,14 @@ h2 {
 .list-social-icons a {
   color: #495057; }
   .list-social-icons a:hover {
-    color: #CAA268; }
+    color: #8AC1E0; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #CAA268; }
+    color: #8AC1E0; }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -107,15 +107,15 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #CAA268 !important; }
+  background-color: #8AC1E0 !important; }
 
 .text-primary {
-  color: #CAA268 !important; }
+  color: #8AC1E0 !important; }
 
 a {
-  color: #CAA268; }
+  color: #8AC1E0; }
   a:hover, a:focus, a:active {
-    color: #aa7d3c; }
+    color: #4ea1d0; }
 
 #downloadBtn {
   position: fixed;
@@ -130,7 +130,7 @@ a {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #caa268 !important;
+  background-color: #8AC1E0 !important;
   /* Set a background color */
   color: black;
   /* Text color */
@@ -144,7 +144,7 @@ a {
   /* Increase font size */ }
 
 #downloadBtn:hover {
-  background-color: #caa268 !important;
+  background-color: #8AC1E0 !important;
   /* Add a dark-grey background on hover */ }
 
 .downloadIcon {

@@ -19,7 +19,7 @@
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: #caa268!important;
+  background-color: $primary !important;
   /* Set a background color */
   color: black;
   /* Text color */
@@ -34,7 +34,7 @@
 }
 
 #downloadBtn:hover {
-  background-color: #caa268!important;
+  background-color: $primary !important;
   /* Add a dark-grey background on hover */
 }
 
