@@ -19,7 +19,7 @@
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: $primary !important;
+  background-color: $primary;
   /* Set a background color */
   color: black;
   /* Text color */
@@ -31,6 +31,32 @@
   /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
+  @media only screen and (max-width: 375px) {
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 10px;
+    /* Place the button at the bottom of the page */
+    right: 15px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red !important;
+    /* Set a background color */
+    color: black;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 5px;
+    /* Some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 10px;
+    /* Increase font size */
+  }
 }
 
 #downloadBtn:hover {
