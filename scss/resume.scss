@@ -31,6 +31,18 @@
   /* Rounded corners */
   font-size: 18px;
   /* Increase font size */
+  @media only screen and (max-width: 414px) {
+    bottom: 10px;
+    /* Place the button at the bottom of the page */
+    right: 15px;
+    /* Place the button 30px from the right */
+    padding: 8px;
+    /* Some padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 9px;
+    /* Increase font size */
+  }
 }
 
 #downloadBtn:hover {
@@ -40,4 +52,9 @@
 
 .downloadIcon {
   margin-right: 10px;
+  @media only screen and (max-width: 414px) {
+    margin-right: 5px;
+    width: 40%;
+    height: auto;
+  }
 }
