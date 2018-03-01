@@ -32,6 +32,8 @@
   font-size: 18px;
   /* Increase font size */
   @media only screen and (max-width: 414px) {
+    background-color: $primary;
+    /* Set a background color */
     bottom: 10px;
     /* Place the button at the bottom of the page */
     right: 15px;

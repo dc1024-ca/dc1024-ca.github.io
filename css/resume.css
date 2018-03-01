@@ -144,6 +144,8 @@ a {
   /* Increase font size */ }
   @media only screen and (max-width: 414px) {
     #downloadBtn {
+      background-color: #8AC1E0;
+      /* Set a background color */
       bottom: 10px;
       /* Place the button at the bottom of the page */
       right: 15px;

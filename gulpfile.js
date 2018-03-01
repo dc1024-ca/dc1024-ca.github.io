@@ -42,7 +42,7 @@ gulp.task('sass-404', function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['sass-resume'], function() {
+gulp.task('minify-css-resume', ['sass-resume'], function() {
   return gulp.src('css/resume.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
@@ -56,7 +56,7 @@ gulp.task('minify-css', ['sass-resume'], function() {
     }))
 });
 
-gulp.task('minify-css', ['sass-404'], function() {
+gulp.task('minify-css-404', ['sass-404'], function() {
   return gulp.src('css/404.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
@@ -129,7 +129,7 @@ gulp.task('copy', function() {
 })
 
 // Default task
-gulp.task('default', ['sass-resume', 'sass-404', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['sass-resume', 'sass-404', 'minify-css-resume', 'minify-css-404', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -141,10 +141,11 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass-resume', 'sass-404', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'sass-resume', 'sass-404', 'minify-css-resume', 'minify-css-404', 'minify-js'], function() {
   gulp.watch('scss/*.scss', ['sass-resume']);
   gulp.watch('scss/*.scss', ['sass-404']);
-  gulp.watch('css/*.css', ['minify-css']);
+  gulp.watch('css/*.css', ['minify-css-resume']);
+  gulp.watch('css/*.css', ['minify-css-404']);
   gulp.watch('js/*.js', ['minify-js']);
   // Reloads the browser whenever HTML or JS files change
   gulp.watch('*.html', browserSync.reload);
