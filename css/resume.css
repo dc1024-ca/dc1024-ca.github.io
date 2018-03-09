@@ -170,14 +170,14 @@ a {
       height: auto; } }
 
 /* The grid: Four equal columns that floats next to each other */
-.column {
+.ingColumn {
   float: left;
   margin: 10px;
   border-style: solid;
   border-width: 2px; }
 
 /* Style the images inside the grid */
-.column img {
+.ingColumn img {
   width: auto;
   cursor: pointer; }
 
