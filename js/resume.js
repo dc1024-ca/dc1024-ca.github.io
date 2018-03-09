@@ -35,5 +35,4 @@
   //   window.URL.revokeObjectURL(url);
   // })
 
-
 })(jQuery); // End of use strict
