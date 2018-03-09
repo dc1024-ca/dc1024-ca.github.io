@@ -23,7 +23,9 @@ doAjax("GET", "https://api.instagram.com/v1/users/self/media/recent/?access_toke
 
   var datas = JSON.parse(msg).data;
   var baseID = "insID";
+
   datas.forEach(function(element, index) {
     document.getElementById(baseID + (index + 1)).src = element.images.thumbnail.url;
+    document.getElementById(baseID + (index + 1)).alt = element.caption.text;
   });
 })
