@@ -208,5 +208,8 @@ a {
   font-size: 35px;
   cursor: pointer; }
 
+.invisibleCol {
+  color: white; }
+
 .hyperlinkNoColor {
   color: inherit; }
