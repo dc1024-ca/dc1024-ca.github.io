@@ -117,9 +117,10 @@
     margin-right: 5px;
     width: 40%;
     height: auto;
-    visibility: visible !important;
+    display: inline;
+    // visibility: visible !important;
   }
-  visibility: hidden;
+  display: none;
 }
 
 h1 {
