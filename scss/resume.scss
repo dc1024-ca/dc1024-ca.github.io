@@ -109,3 +109,47 @@
 .hyperlinkNoColor {
   color: inherit;
 }
+
+.profile-mob {
+  width: 50%;
+  margin-right: 10px;
+  @media only screen and (max-width: 992px) {
+    margin-right: 5px;
+    width: 40%;
+    height: auto;
+    visibility: visible !important;
+  }
+  visibility: hidden;
+}
+
+h1 {
+  @media only screen and (max-width: 992px) {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.contact-mob {
+  @media only screen and (max-width: 992px) {
+    text-align: center;
+    margin-bottom: 1rem!important;
+  }
+}
+
+.intro-mob {
+  @media only screen and (max-width: 992px) {
+    // text-align: center;
+    margin-left: 7.5%;
+    width: 85%;
+    margin-bottom: 0.5rem!important;
+  }
+}
+
+.list-social-icons {
+  @media only screen and (max-width: 992px) {
+    // text-align: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
