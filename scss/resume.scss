@@ -6,6 +6,31 @@
 @import "resume-item.scss";
 @import "bootstrap-overrides.scss"; // Components
 
+.counterClock {
+  background-color: #fefefe;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d292a;
+
+  .invisibleClock {
+    display: none;
+  }
+  @media only screen and (max-width: 414px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    margin-left: 33%;
+    margin-top: 5px;
+
+    img {
+      width: 25px;
+      height: auto;
+    }
+  }
+}
+
 #downloadBtn {
   position: fixed;
   /* Fixed/sticky position */
