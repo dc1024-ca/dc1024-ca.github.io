@@ -266,3 +266,11 @@ a {
   .list-social-icons {
     text-align: center;
     margin-top: 1rem; } }
+
+.subProject {
+  padding-left: 10%; }
+  .subProject .subProjectIcon {
+    padding-left: 10%; }
+
+.workOrg {
+  margin-left: 10rem; }
