@@ -29,3 +29,18 @@ doAjax("GET", "https://api.instagram.com/v1/users/self/media/recent/?access_toke
     document.getElementById(baseID + (index + 1)).alt = element.caption.text;
   });
 })
+
+
+// https://api.instagram.com/v1/users/self/?access_token=ACCESS-TOKEN
+
+
+doAjax("GET", "https://api.instagram.com/v1/users/self/?access_token=12169746.58393b2.14c0a8ecb7854ceebe8f711f01e7283d&count=12", null, false, function functionName(err, msg) {
+
+  var datas = JSON.parse(msg).data;
+  document.getElementById("instagramName").innerHTML = datas.username;
+  document.getElementById("instagramBio").innerHTML = datas.bio;
+  document.getElementById("instagramFollowers").innerHTML = "Followed by :" + datas.counts.followed_by;
+  // console.log(document.getElementById("instagramIntro").innerHTML)
+  console.log(datas);
+
+})
