@@ -278,5 +278,12 @@ a {
 .worldMap {
   margin-bottom: 1rem; }
 
+.travelMap {
+  max-width: 40rem; }
+
+.airportCodeTable {
+  margin-top: 2rem;
+  margin-bottom: 3rem; }
+
 .instagramTitle {
   margin-bottom: 1rem !important; }
