@@ -1,3 +1,21 @@
+// authorization https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token
+
+
+var REDIRECT_TO_IG = "https://www.instagram.com/oauth/authorize/?client_id=7f4115fce05c46ebac2cbdbc66d8c668&redirect_uri=http://localhost:3000/igListing.html&response_type=token"
+var ACCESS_TOKEN = "";
+
+var currentLocation = window.location;
+
+if (ACCESS_TOKEN != "" || currentLocation.hash.includes("access_token")) {
+  ACCESS_TOKEN = currentLocation.hash.split("=")[1];
+  console.log(ACCESS_TOKEN)
+} else {
+  window.location.href = REDIRECT_TO_IG;
+}
+
+
+
+
 var FIRST_FETCH = "https://www.instagram.com/graphql/query/?query_hash=c76146de99bb02f6415203be841dd25a&variables=%7B%22id%22%3A%2212169746%22%2C%22include_reel%22%3Atrue%2C%22fetch_mutual%22%3Atrue%2C%22first%22%3A24%7D";
 
 // FOLOWER_FETCH_HEAD + end_cursor + FOLOWER_FETCH_TAIL
@@ -9,7 +27,7 @@ var FOLLOWERLIST = []; //[array]
 var nextCursor = ""; //[string]
 
 // initial fetch
-
+//
 httpGetAsync(FIRST_FETCH, function(data) {
 
   dealWithFirstFetch(data)
@@ -37,6 +55,7 @@ function dealWithFirstFetch(responseText) {
   // parse responseText into JSON Object
   var JSONObject = JSON.parse(responseText);
   // check if has next page
+  return;
   if (_checkHasNextPage(JSONObject)) {
     _updateEndCursor(JSONObject);
   } else {
