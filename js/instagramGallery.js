@@ -27,7 +27,10 @@ doAjax("GET", "https://api.instagram.com/v1/users/self/media/recent/?access_toke
   datas.forEach(function(element, index) {
     document.getElementById(baseID + (index + 1)).src = element.images.thumbnail.url;
     document.getElementById(baseID + (index + 1)).alt = element.caption.text;
+    document.getElementById(baseID + "_" + (index + 1)).href = element.link;
   });
+
+  console.log(datas)
 })
 
 
